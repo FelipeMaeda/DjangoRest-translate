@@ -1,6 +1,6 @@
 import GlobalStyles from '../styles/globalStyles'
-import Layout from '../components/layout'
-import NavBar from '../components/layout/navbar'
+import Layout from '../components/Layout/index'
+import NavBar from '../components/Layout/navbar/index'
 
 function Home() {
     return (
