@@ -1,2 +1,2 @@
-# Vercel-translate
- Vercel-translate
+# DjangoRest-translate
+ DjangoRest-translate
