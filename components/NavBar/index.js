@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, DropdownStyles } from './styles.js';
-import { DropdownOption, DropdownProvider } from '../Dropdown';
+import { DropdownOption, DropdownProvider, DropdownRoot } from '../Dropdown';
 import { Products, Developers, Company } from '../Content';
 
 function NavBar() {
@@ -29,6 +29,8 @@ function NavBar() {
                         </li>
                     </ul>
                 </Container>
+
+                <DropdownRoot />
             </DropdownStyles>
         </DropdownProvider>
     );

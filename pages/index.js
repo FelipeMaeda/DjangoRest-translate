@@ -5,12 +5,11 @@ import NavBar from '../components/NavBar/index.js'
 function Home() {
     return (
     <div>
-        <NavBar />
         <Layout>
+            <NavBar />
         </Layout>
         
         <GlobalStyles />
-        <h4>Home</h4>
     </div>
     )
 }

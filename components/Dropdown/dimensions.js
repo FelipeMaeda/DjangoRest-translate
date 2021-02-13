@@ -1,4 +1,6 @@
-import { useState, useCallback, useLayoutEffect } from 'react';
+import React, { useState, useCallback, useLayoutEffect } from 'react';
+
+React.useLayoutEffect = React.useEffect;
 
 const getDimensions = (element) => element.getBoundingClientRect();
 

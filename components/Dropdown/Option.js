@@ -1,24 +1,25 @@
 import React, { useRef, useState, useContext, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { useDimensions } from './dimensions.js';
-import { Context } from './Provider.js';
+
+import { useDimensions } from './dimensions';
+import { Context } from './Provider';
 
 let lastOptionId = 0;
 
 export function DropdownOption({ name, content: Content, backgroundHeight }) {
-    const idRef = useRef(++lastOptionId);
-    const id = idRef.current;
+  const idRef = useRef(++lastOptionId);
+  const id = idRef.current;
 
-    const [optionHook, optionDimensions] = useDimensions();
-    const [registered, setRegistered] = useState(false);
+  const [optionHook, optionDimensions] = useDimensions();
+  const [registered, setRegistered] = useState(false);
 
-    const {
-        registerOption,
-        updateOptionProps,
-        deleteOptionById,
-        setTargetId,
-        targetId,
-    } = useContext(Context);
+  const {
+    registerOption,
+    updateOptionProps,
+    deleteOptionById,
+    setTargetId,
+    targetId,
+  } = useContext(Context);
 
     useEffect(() => {
         if (!registered && optionDimensions) {
@@ -27,15 +28,15 @@ export function DropdownOption({ name, content: Content, backgroundHeight }) {
 
                 useEffect(() => {
                     const contentDimensions = contentRef.current.getBoundingClientRect();
-                    updateOptionProps(id, { contentDimensions })
-                }, [])
+                    updateOptionProps(id, { contentDimensions });
+                }, []);
 
                 return (
-                    <div red={contentRef}>
+                    <div ref={contentRef}>
                         <Content />
                     </div>
-                )
-            }
+                );
+            };
 
             registerOption({
                 id,
