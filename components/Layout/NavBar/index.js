@@ -1,6 +1,6 @@
 import React from 'react';
-import { Container, DropdownStyles } from './styles';
-import { DropdownOption } from '../Dropdown/index'
+import { Container, DropdownStyles } from './styles.js';
+import { DropdownOption } from '../Dropdown/index.js'
 
 function NavBar() {
     return (
