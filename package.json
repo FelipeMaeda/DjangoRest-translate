@@ -1,0 +1,25 @@
+{
+  "name": "Vercel-translate",
+  "version": "1.0.0",
+  "description": "Vercel-translate",
+  "main": "index.js",
+  "scripts": {
+    "dev": "next dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FelipeMaeda/Vercel-translate.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/FelipeMaeda/Vercel-translate/issues"
+  },
+  "homepage": "https://github.com/FelipeMaeda/Vercel-translate#readme",
+  "dependencies": {
+    "next": "^10.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  }
+}
