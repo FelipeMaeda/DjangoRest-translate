@@ -7,7 +7,6 @@ function Home() {
     <div>
         <NavBar />
         <Layout>
-            <h1>Rocketseat</h1>    
         </Layout>
         
         <GlobalStyles />
