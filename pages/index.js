@@ -1,4 +1,4 @@
-import GlobalStyles from '../styles/globalstyles'
+import GlobalStyles from '../styles/globalStyles'
 import Layout from '../components/layout/index'
 import NavBar from '../components/layout/navbar/index'
 
