@@ -1,6 +1,6 @@
 import { useState } from "react"
 import GlobalStyles from '../styles/globalStyles'
-import Layout from '../components/Layout/menu'
+import Layout from '../components/layout/menu'
 
 function Home() {
     return (
