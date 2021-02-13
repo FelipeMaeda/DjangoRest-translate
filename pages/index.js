@@ -1,10 +1,11 @@
-import { useState } from "react"
-import GlobalStyles from '../styles/globalStyles'
-import Layout from '../components/layout/menu'
+import GlobalStyles from '../styles/globalstyles'
+import Layout from '../components/layout/index'
+import NavBar from '../components/layout/navbar/index'
 
 function Home() {
     return (
     <div>
+        <NavBar />
         <Layout>
             <h1>Rocketseat</h1>    
         </Layout>
