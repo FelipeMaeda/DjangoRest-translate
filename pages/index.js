@@ -1,14 +1,12 @@
-import GlobalStyles from '../styles/globalStyles.js'
-import Layout from '../components/Layout/index.js'
-import NavBar from '../components/NavBar/index.js'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'reactstrap';
+import NavBarMenu from '../components/NavBar/index.js'
 
 function Home() {
     return (
     <div>
-        <Layout>
-        </Layout>
-        
-        <GlobalStyles />
+        <NavBarMenu></NavBarMenu>
+        <Button>Teste</Button>
     </div>
     )
 }
