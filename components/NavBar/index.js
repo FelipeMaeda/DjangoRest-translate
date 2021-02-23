@@ -5,12 +5,13 @@ import { Navbar, Nav } from 'react-bootstrap';
 function NavBarMenu() {
     return (
         <div>
-            <Navbar className="NavbarStyles" bg="success" variant="dark">
+            <Navbar bg="success" variant="dark">
                 <Nav className="mr-auto">
-                    <Nav.Link className="li-styles" href="#home">Felipe Maeda</Nav.Link>
-                    <Nav.Link className="li-styles" href="#home">Home</Nav.Link>
-                    <Nav.Link className="li-styles" href="#features">Features</Nav.Link>
-                    <Nav.Link className="li-styles" href="#pricing">Pricing</Nav.Link>
+                    <Nav.Link href="#FelipeMaeda"><span className="linkText">Felipe Maeda</span></Nav.Link>
+                    <Nav.Link href="#Projetos">Projetos</Nav.Link>
+                    <Nav.Link href="#GitHub">GitHub</Nav.Link>
+                    <Nav.Link href="#Sobre">Sobre</Nav.Link>
+                    <Nav.Link href="#Contato">Contato</Nav.Link>
                 </Nav>
             </Navbar>
             <br />
